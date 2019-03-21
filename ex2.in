@@ -1,0 +1,18 @@
+automata_language2 ::= PushDownAutomata (
+	alphabet :: { a, b } ;
+	states :: { q0 } ;
+	initial_state :: q0 ;
+	stack_alphabet :: { Z0, X } ;
+
+	q0 -> (
+		a, z0 / X&Z0 -> q0 ;
+		b, Z0 / 1&Z0 -> q0 ;
+		a, 0 / 0&0 -> q0 ;
+		b, 0 / e -> q0 ;
+		b, 1 / 1&1 -> q0 ;
+		a, 1 / e -> q0 ;
+		e, Z0 / e -> q0 ;
+	) ;
+) ;;
+
+

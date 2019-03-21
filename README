@@ -1,0 +1,16 @@
+Nicuta Loredana Ionela 335CC Tema LFA
+
+	In realizarea acestei teme am folosit urmatoarea abordare:
+	Am parcurs tot fisierul, iar la fiecare matching am folosit o stare
+speciala pentru atunci cand a fost necesar. Astfel starea de baza este considerata
+a fi starea initiala, unde majoritatea starilor la final se intorc si continua cu
+o noua stare pentru o noua informatie.
+	La fiecare pas verific daca sunt caractere necesare, in caz contrar, 
+acestea vor fi ignorate. Pentru alfabet, initial_states, final state am luat sirul asa
+cum a fost scris si l-am afisat, pentru numarul de stari am parcurs multimea si la 
+fiecare stare descoperita, incrementez un contor. 
+	Pentru partea de tranzitii am salvat fiecare rand in parte si am afisat
+individual acest lucru. 
+	Nu am implementat pentru stiva Tipul automatului, deoarece ar fi trebuit sa schimb
+destul de mult codul, respectiv are anumite bug-uri deoarece nu am testat suficient de
+mult pe diferite exemple.
